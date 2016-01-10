@@ -19,6 +19,8 @@
                 <Button Command="{Binding pauseCommand}" Width="50" Height="50" Content="Pause"/>
                 <Button Command="{Binding stopCommand}" Width="50" Height="50" Content="Stop"/>
                 <Button Command="{Binding loadMediaCommand}" Width="50" Height="50" Content="Load"/>
+                <Button Command="{Binding prevCommand}" Width="50" Height="50" Content="Previous"/>
+                <Button Command="{Binding nextCommand}" Width="50" Height="50" Content="Next"/>
             </WrapPanel>
         </StackPanel>
     </Grid>

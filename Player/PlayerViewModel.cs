@@ -8,11 +8,18 @@ namespace SimpleMVVMExample
     public class PlayerViewModel : ObservableObject, IPageViewModel
     {
         private MediaElement myMedia;
+        private XML fileMedias = new XML();
+        private PlayerModel Playlist = new PlayerModel();
+        //List<Tuple<String, Boolean>> mediasList
         public PlayerViewModel()
         {
             MediaElementObject = new MediaElement();
             myMedia.LoadedBehavior = MediaState.Manual;
+            fileMedias.Load("Medias");
+            //if (fileMedias.HasMedia("Media") == true)
+            Playlist.Medias = fileMedias.GetMedias();
         }
+        
         public string Name
         {
             get
@@ -24,16 +31,16 @@ namespace SimpleMVVMExample
         public MediaElement MediaElementObject
         {
             get { return myMedia; }
-            set { myMedia = value;
-                 }
+            set { myMedia = value; }
         }
 
-
-        int i = 1;
         private ICommand _playCommand;
         private ICommand _pauseCommand;
         private ICommand _stopCommand;
         private ICommand _loadMediaCommand;
+        private ICommand _prevCommand;
+        private ICommand _nextCommand;
+
         public ICommand playCommand
         {
             get
@@ -41,7 +48,6 @@ namespace SimpleMVVMExample
                 return _playCommand ?? (_playCommand = new CommandHandler(() => playMedia(), _canExecute));
             }
         }
-
         public ICommand loadMediaCommand
         {
             get
@@ -49,7 +55,6 @@ namespace SimpleMVVMExample
                 return _loadMediaCommand ?? (_loadMediaCommand = new CommandHandler(() => loadMedia(), _canExecute));
             }
         }
-
         public ICommand stopCommand
         {
             get
@@ -64,19 +69,31 @@ namespace SimpleMVVMExample
                 return _pauseCommand ?? (_pauseCommand = new CommandHandler(() => pauseMedia(), _canExecute));
             }
         }
+        public ICommand prevCommand
+        {
+            get
+            {
+                return _prevCommand ?? (_prevCommand = new CommandHandler(() => prevMedia(), _canExecute));
+            }
+        }
+        public ICommand nextCommand
+        {
+            get
+            {
+                return _nextCommand ?? (_nextCommand = new CommandHandler(() => nextMedia(), _canExecute));
+            }
+        }
 
         private bool _canExecute = true;
         public void playMedia()
         {
-            Console.WriteLine("play" + i);
-            i += 1;
+            myMedia.Source = new Uri(Playlist.Medias[Playlist.CurrentIndex].Path);
+            myMedia.Position = TimeSpan.FromSeconds(1);
             myMedia.Play();
         }
 
         public void loadMedia()
         {
-            Console.WriteLine("LOAD" + i);
-            i += 1;
             OpenFileDialog openMedia = new OpenFileDialog();
             openMedia.Title = "Open Media";
             //openMedia.Filter = "mp4 files(*.mp4)|*.mp4";
@@ -88,18 +105,41 @@ namespace SimpleMVVMExample
                 myMedia.Position = TimeSpan.FromSeconds(1);
                 myMedia.Play();
             }
+
+            // Tout d'abord load le XML (constructeur)
+            // PlayerModel = Playlist
+
+            Playlist.addMedia(new Player.Media(openMedia.FileName, openMedia.FileName));
+            // check si il est pas déja ajouté ? 
+            fileMedias.Add(openMedia.FileName, false);
+            // lancé le write
+            fileMedias.WriteInFile("Medias");
+
+            // rajouter a la playlist
         }
+        public void prevMedia()
+        {
+            Playlist.Previous();
+            myMedia.Source = new Uri(Playlist.Medias[Playlist.CurrentIndex].Path);
+            myMedia.Position = TimeSpan.FromSeconds(1);
+            myMedia.Play();
+        }
+
+        public void nextMedia()
+        {
+            Playlist.Next();
+            myMedia.Source = new Uri(Playlist.Medias[Playlist.CurrentIndex].Path);
+            myMedia.Position = TimeSpan.FromSeconds(1);
+            myMedia.Play();
+        }
+
         public void pauseMedia()
         {
-            Console.WriteLine("pause" + i);
-            i += 1;
             myMedia.Pause();
         }
 
         public void stopMedia()
         {
-            Console.WriteLine("stop" + i);
-            i += 1;
             myMedia.Stop();
         }
     }

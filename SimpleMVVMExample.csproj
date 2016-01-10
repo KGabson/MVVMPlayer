@@ -61,6 +61,7 @@
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Home\HomeViewModel.cs" />
+    <Compile Include="Player\Media.cs" />
     <Compile Include="Player\PlayerModel.cs" />
     <Compile Include="Helper Classes\RelayCommand.cs" />
     <Compile Include="Player\PlayerView.xaml.cs">
@@ -68,6 +69,7 @@
     </Compile>
     <Compile Include="Player\PlayerViewModel.cs" />
     <Compile Include="IPageViewModel.cs" />
+    <Compile Include="XML.cs" />
     <Page Include="Home\HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
