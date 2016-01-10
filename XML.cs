@@ -1,10 +1,10 @@
-﻿using SimpleMVVMExample.Player;
+﻿using WindowsMediaPlayer.Player;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SimpleMVVMExample
+namespace WindowsMediaPlayer
 {
     public class XML
     {

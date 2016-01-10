@@ -1,0 +1,17 @@
+C:\Users\jerem\Desktop\SimpleMVVMExample\bin\Debug\WindowsMediaPlayer.exe
+C:\Users\jerem\Desktop\SimpleMVVMExample\bin\Debug\WindowsMediaPlayer.pdb
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Home\HomeView.baml
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Home\HomeView.g.cs
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\ApplicationView.g.cs
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Player\PlayerView.g.cs
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\App.g.cs
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer_MarkupCompile.cache
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer_MarkupCompile.lref
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\ApplicationView.baml
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Player\PlayerView.baml
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.g.resources
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.Properties.Resources.resources
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.csproj.GenerateResource.Cache
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.exe
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.pdb

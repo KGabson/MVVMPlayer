@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace SimpleMVVMExample
+namespace WindowsMediaPlayer
 {
     public class ApplicationViewModel : ObservableObject
     {

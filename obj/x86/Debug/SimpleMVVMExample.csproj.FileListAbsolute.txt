@@ -34,21 +34,21 @@ C:\Documents and Settings\Owner\Desktop\Rachel's\SimpleMVVMExample\SimpleMVVMExa
 C:\Documents and Settings\Owner\Desktop\Rachel's\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\Home\HomeView.g.cs
 C:\Documents and Settings\Owner\Desktop\Rachel's\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\Products\ProductsView.g.cs
 C:\Documents and Settings\Owner\Desktop\Rachel's\SimpleMVVMExample\SimpleMVVMExample\obj\x86\Debug\Products\ProductsView.baml
-C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.exe
-C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.pdb
-C:\Users\jerem\Desktop\SimpleMVVMExample\bin\Debug\SimpleMVVMExample.exe
-C:\Users\jerem\Desktop\SimpleMVVMExample\bin\Debug\SimpleMVVMExample.pdb
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.csprojResolveAssemblyReference.cache
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Home\HomeView.baml
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Home\HomeView.g.cs
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\ApplicationView.g.cs
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\App.g.cs
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample_MarkupCompile.cache
-C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample_MarkupCompile.lref
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\ApplicationView.baml
-C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.g.resources
-C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.Properties.Resources.resources
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\SimpleMVVMExample.csproj.GenerateResource.Cache
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Player\PlayerView.g.cs
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\Player\PlayerView.baml
+C:\Users\jerem\Desktop\SimpleMVVMExample\bin\Debug\WindowsMediaPlayer.exe
+C:\Users\jerem\Desktop\SimpleMVVMExample\bin\Debug\WindowsMediaPlayer.pdb
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer_MarkupCompile.cache
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer_MarkupCompile.lref
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.g.resources
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.Properties.Resources.resources
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.exe
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.pdb

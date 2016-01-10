@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SimpleMVVMExample
+namespace WindowsMediaPlayer
 {
     /// <summary>
     /// Interaction logic for ProductsView.xaml

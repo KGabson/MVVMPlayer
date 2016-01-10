@@ -1,11 +1,11 @@
-﻿using SimpleMVVMExample;
-using SimpleMVVMExample.Player;
+﻿using WindowsMediaPlayer;
+using WindowsMediaPlayer.Player;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SimpleMVVMExample
+namespace WindowsMediaPlayer
 {
     public class PlayerModel : ObservableObject
     {
