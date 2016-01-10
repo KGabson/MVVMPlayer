@@ -25,6 +25,11 @@ namespace WindowsMediaPlayer
             CurrentIndex = 0;
         }
 
+        public int RetCount()
+        {
+            return (Medias.Count());
+        }
+
         public void addMedia(Media toAdd)
         {
             Medias.Add(toAdd);

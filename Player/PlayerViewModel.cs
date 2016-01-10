@@ -87,8 +87,11 @@ namespace WindowsMediaPlayer
         private bool _canExecute = true;
         public void playMedia()
         {
-            myMedia.Source = new Uri(Playlist.Medias[Playlist.CurrentIndex].Path);
-            myMedia.Position = TimeSpan.FromSeconds(1);
+            if (Playlist.RetCount() != 0)
+            {
+                myMedia.Source = new Uri(Playlist.Medias[Playlist.CurrentIndex].Path);
+                myMedia.Position = TimeSpan.FromSeconds(1);
+            }
             myMedia.Play();
         }
 
