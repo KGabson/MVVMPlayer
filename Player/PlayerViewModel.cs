@@ -24,7 +24,7 @@ namespace WindowsMediaPlayer
         {
             get
             {
-                return "Player Page";
+                return "Player";
             }
         }
 

@@ -11,7 +11,7 @@ namespace WindowsMediaPlayer
         {
             get
             {
-                return "Playlist Page";
+                return "Playlists";
             }
         }
     }

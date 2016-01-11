@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <ContentControl Content="{Binding MediaElementObject}"/>
         <StackPanel Grid.Row="1">
-            <TextBlock Text="{Binding Path=MediaName, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+            <TextBlock Foreground="White" Text="{Binding Path=MediaName, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
             <WrapPanel HorizontalAlignment="Center">
                 <Button Command="{Binding prevCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0">
                     <Image Source="C:\Users\user\Documents\GitHub\MVVMPlayer\Images\left36.png" Width="50" Height="auto"/>
