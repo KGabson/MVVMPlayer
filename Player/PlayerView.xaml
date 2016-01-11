@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:WindowsMediaPlayer"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -15,12 +16,24 @@
         <StackPanel Grid.Row="1">
             <TextBlock Text="{Binding Path=MediaName, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
             <WrapPanel HorizontalAlignment="Center">
-                <Button Command="{Binding playCommand}" Width="50" Height="50" Content="Play"/>
-                <Button Command="{Binding pauseCommand}" Width="50" Height="50" Content="Pause"/>
-                <Button Command="{Binding stopCommand}" Width="50" Height="50" Content="Stop"/>
-                <Button Command="{Binding loadMediaCommand}" Width="50" Height="50" Content="Load"/>
-                <Button Command="{Binding prevCommand}" Width="50" Height="50" Content="Previous"/>
-                <Button Command="{Binding nextCommand}" Width="50" Height="50" Content="Next"/>
+                <Button Command="{Binding prevCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0">
+                    <Image Source="C:\Users\user\Documents\GitHub\MVVMPlayer\Images\left36.png" Width="50" Height="auto"/>
+                </Button>
+                <Button Command="{Binding playCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0">
+                    <Image Source="C:\Users\user\Documents\GitHub\MVVMPlayer\Images\play43.png" Width="50" Height="auto"/>
+                </Button>
+                <Button Command="{Binding pauseCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0">
+                    <Image Source="C:\Users\user\Documents\GitHub\MVVMPlayer\Images\pause15.png" Width="50" Height="auto"/>
+                </Button>
+                <Button Command="{Binding stopCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0">
+                    <Image Source="C:\Users\user\Documents\GitHub\MVVMPlayer\Images\square64.png" Width="50" Height="auto"/>
+                </Button>
+                <Button Command="{Binding playCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0">
+                    <Image Source="C:\Users\user\Documents\GitHub\MVVMPlayer\Images\play44.png" Width="50" Height="auto"/>
+                </Button>
+                <Button Command="{Binding loadMediaCommand}" Width="50" Height="50" Background="Transparent" BorderThickness="0">
+                    <Image Source="C:\Users\user\Documents\GitHub\MVVMPlayer\Images\arrow468.png" Width="50" Height="auto"/>
+                </Button>
             </WrapPanel>
         </StackPanel>
     </Grid>

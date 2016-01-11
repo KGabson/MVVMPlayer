@@ -115,6 +115,14 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow468.png" />
+    <Resource Include="Images\left36.png" />
+    <Resource Include="Images\pause15.png" />
+    <Resource Include="Images\play43.png" />
+    <Resource Include="Images\play44.png" />
+    <Resource Include="Images\square64.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

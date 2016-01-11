@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\
+C:\Users\user\Documents\GitHub\MVVMPlayer\obj\x86\Debug\
 WindowsMediaPlayer
 none
 false
 DEBUG;TRACE
-C:\Users\jerem\Desktop\SimpleMVVMExample\App.xaml
+C:\Users\user\Documents\GitHub\MVVMPlayer\App.xaml
 3599786493
 
-17-1075051583
+17-1873056954
 12-1381780322
 Home\HomeView.xaml;ApplicationView.xaml;Player\PlayerView.xaml;
 

@@ -11,12 +11,12 @@
             <local:PlayerView />
         </DataTemplate>
     </Window.Resources>
-    <DockPanel>
+    <DockPanel Background="#151515">
         <Border DockPanel.Dock="Left" BorderBrush="Black" BorderThickness="0,0,1,0">
             <ItemsControl ItemsSource="{Binding PageViewModels}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Content="{Binding Name}"
+                        <Button Foreground="#F14E45" Background="151515" BorderThickness="0" Content="{Binding Name}"
                                 Command="{Binding DataContext.ChangePageCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
                                 CommandParameter="{Binding }"
                                 Margin="2,5"/>
