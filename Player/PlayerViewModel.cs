@@ -28,6 +28,18 @@ namespace WindowsMediaPlayer
             }
         }
 
+        public string _MediaName;
+        public string MediaName
+        {
+            get
+            {
+                return _MediaName;
+            }
+            set { _MediaName = value;
+                RaisePropertyChanged("MediaName");
+            }
+        }
+
         public MediaElement MediaElementObject
         {
             get { return myMedia; }
@@ -93,6 +105,7 @@ namespace WindowsMediaPlayer
                 myMedia.Position = TimeSpan.FromSeconds(1);
             }
             myMedia.Play();
+            this.MediaName = Playlist.GetName();
         }
 
         public void loadMedia()
@@ -106,7 +119,7 @@ namespace WindowsMediaPlayer
             {
                 myMedia.Source = new Uri(openMedia.FileName);
                 myMedia.Position = TimeSpan.FromSeconds(1);
-                myMedia.Play();
+              //  myMedia.Play();
             }
 
             // Tout d'abord load le XML (constructeur)
@@ -118,6 +131,8 @@ namespace WindowsMediaPlayer
             // lancé le write
             fileMedias.WriteInFile("Medias");
 
+            Playlist.CurrentIndex = (Playlist.RetCount() - 1);
+            playMedia();
             // rajouter a la playlist
         }
         public void prevMedia()
@@ -125,7 +140,7 @@ namespace WindowsMediaPlayer
             Playlist.Previous();
             myMedia.Source = new Uri(Playlist.Medias[Playlist.CurrentIndex].Path);
             myMedia.Position = TimeSpan.FromSeconds(1);
-            myMedia.Play();
+            playMedia();
         }
 
         public void nextMedia()
@@ -133,7 +148,7 @@ namespace WindowsMediaPlayer
             Playlist.Next();
             myMedia.Source = new Uri(Playlist.Medias[Playlist.CurrentIndex].Path);
             myMedia.Position = TimeSpan.FromSeconds(1);
-            myMedia.Play();
+            playMedia();
         }
 
         public void pauseMedia()

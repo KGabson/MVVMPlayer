@@ -12,7 +12,7 @@ namespace WindowsMediaPlayer
         #region Fields
         public System.Collections.ObjectModel.ObservableCollection<Media> Medias { get; set; }
 
-        // PLAYLIST NAME
+        // Song name NAME
         public String Name { get; set; }
 
         // MEDIA INDEX
@@ -23,6 +23,12 @@ namespace WindowsMediaPlayer
             Name = "";
             Medias = new System.Collections.ObjectModel.ObservableCollection<Media>();
             CurrentIndex = 0;
+        }
+
+        public string GetName()
+        {
+            Console.WriteLine(Medias[CurrentIndex].Name);
+            return Medias[CurrentIndex].Name;
         }
 
         public int RetCount()

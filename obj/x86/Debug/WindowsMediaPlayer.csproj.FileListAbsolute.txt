@@ -15,3 +15,4 @@ C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.Proper
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.csproj.GenerateResource.Cache
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.exe
 C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.pdb
+C:\Users\jerem\Desktop\SimpleMVVMExample\obj\x86\Debug\WindowsMediaPlayer.csprojResolveAssemblyReference.cache

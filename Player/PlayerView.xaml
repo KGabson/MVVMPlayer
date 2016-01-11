@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
         <ContentControl Content="{Binding MediaElementObject}"/>
         <StackPanel Grid.Row="1">
-            <Label Name="lblStatus" Content="Amazinnnnng" HorizontalContentAlignment="Center" Margin="5" />
+            <TextBlock Text="{Binding Path=MediaName, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
             <WrapPanel HorizontalAlignment="Center">
                 <Button Command="{Binding playCommand}" Width="50" Height="50" Content="Play"/>
                 <Button Command="{Binding pauseCommand}" Width="50" Height="50" Content="Pause"/>

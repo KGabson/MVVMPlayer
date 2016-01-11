@@ -9,5 +9,14 @@
         <TextBlock Text="This is the Home Page" 
                    FontWeight="Bold" FontSize="18"
                    HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <ListView VerticalAlignment="Stretch" Name="ListViewMovies" ItemsSource="{Binding Path=Collection}" IsSynchronizedWithCurrentItem="True" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>
